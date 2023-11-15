@@ -1,0 +1,22 @@
+server:
+  port: 8081
+spring:
+  redis:
+    host: 192.168.232.135
+    port: 6379
+    password: 1523025069
+  datasource:
+    url: jdbc:mysql://localhost:3306/study?characterEncoding=utf-8&serverTimezone=UTC
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+
+yangmao:
+  jwt:
+    # 设置jwt签名加密时使用的秘钥
+    SecretKey: itcast
+    # 设置jwt过期时间
+    Ttl: 7200000
+    TokenName: authentication
